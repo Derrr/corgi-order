@@ -1,8 +1,8 @@
 package com.corgi.job;
 
-import com.alibaba.dubbo.config.annotation.Reference;
 import com.corgi.order.api.CorgiOrderService;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 @Component
 @Slf4j
 public class CorgiOrderTask {
-    @Reference
+    @Autowired
     private CorgiOrderService corgiOrderService;
 
     @Async
