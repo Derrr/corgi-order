@@ -7,3 +7,7 @@ server:
 spring:
   dubbo:
     registry: zookeeper://47.111.180.175:2181
+  application:
+    id: dubbo-order
+    name: dubbo-order
+
