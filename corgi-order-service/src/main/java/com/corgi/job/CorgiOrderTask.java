@@ -1,8 +1,6 @@
 package com.corgi.job;
 
 import com.alibaba.dubbo.config.annotation.Reference;
-import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONObject;
 import com.corgi.order.api.CorgiOrderService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.scheduling.annotation.Async;
