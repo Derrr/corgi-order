@@ -1,6 +1,7 @@
 package com.corgi.service.impl;
 
 import com.alibaba.dubbo.config.annotation.Service;
+import com.corgi.order.api.CorgiOrderService;
 import com.theokanning.openai.completion.chat.ChatCompletionRequest;
 import com.theokanning.openai.completion.chat.ChatMessage;
 import com.theokanning.openai.completion.chat.ChatMessageRole;
@@ -15,11 +16,12 @@ import java.util.List;
 /**
  * @author tairanliu
  */
-@Service(interfaceClass = CorgiOrderServiceImpl.class)
+@Service(interfaceClass = CorgiOrderService.class)
 @Slf4j
-public class CorgiOrderServiceImpl {
+public class CorgiOrderServiceImpl implements CorgiOrderService {
 
 
+    @Override
     public String completeChatMessage() {
         String token = "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";
         OpenAiService service = new OpenAiService(token, Duration.ofSeconds(30));
