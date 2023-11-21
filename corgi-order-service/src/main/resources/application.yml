@@ -3,3 +3,7 @@ server:
   port: 8082
   tomcat:
     basedir: temp
+
+spring:
+  dubbo:
+    registry: zookeeper://47.111.180.175:2181
