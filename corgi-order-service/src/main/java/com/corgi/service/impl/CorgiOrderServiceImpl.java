@@ -7,6 +7,7 @@ import com.theokanning.openai.completion.chat.ChatMessage;
 import com.theokanning.openai.completion.chat.ChatMessageRole;
 import com.theokanning.openai.service.OpenAiService;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Component;
 
 import java.time.Duration;
 import java.util.ArrayList;
@@ -18,6 +19,7 @@ import java.util.List;
  */
 @Service(interfaceClass = CorgiOrderService.class)
 @Slf4j
+@Component
 public class CorgiOrderServiceImpl implements CorgiOrderService {
 
 
