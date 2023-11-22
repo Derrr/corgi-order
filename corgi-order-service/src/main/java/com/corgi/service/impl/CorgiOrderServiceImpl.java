@@ -50,7 +50,7 @@ public class CorgiOrderServiceImpl implements CorgiOrderService {
         final List<ChatMessage> messages = new ArrayList<>();
         final ChatMessage systemMessage = new ChatMessage(ChatMessageRole.SYSTEM.value(), "You are a dog and will speak as such.");
         messages.add(systemMessage);
-        ChatMessage userMessage = new ChatMessage(ChatMessageRole.USER.value(), "Hello");
+        ChatMessage userMessage = new ChatMessage("Admirer", "Hello");
         messages.add(userMessage);
         ChatCompletionRequest chatCompletionRequest = ChatCompletionRequest
                 .builder()
