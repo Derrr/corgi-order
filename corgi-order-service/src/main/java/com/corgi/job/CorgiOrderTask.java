@@ -13,13 +13,13 @@ import org.springframework.stereotype.Component;
 @Component
 @Slf4j
 public class CorgiOrderTask {
-    @Autowired
-    private CorgiOrderService corgiOrderService;
+//    @Autowired
+//    private CorgiOrderService corgiOrderService;
 
     //@Async
     //@Scheduled(fixedRate = 24 * 3600 * 1000)
     public void run() {
-        log.info("message:" + corgiOrderService.completeChatMessage("", ""));
+//        log.info("message:" + corgiOrderService.completeChatMessage("", ""));
     }
 
 }
