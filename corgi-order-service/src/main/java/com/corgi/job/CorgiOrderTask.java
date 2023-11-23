@@ -19,7 +19,7 @@ public class CorgiOrderTask {
     //@Async
     //@Scheduled(fixedRate = 24 * 3600 * 1000)
     public void run() {
-        log.info("message:" + corgiOrderService.completeChatMessage());
+        log.info("message:" + corgiOrderService.completeChatMessage("", ""));
     }
 
 }

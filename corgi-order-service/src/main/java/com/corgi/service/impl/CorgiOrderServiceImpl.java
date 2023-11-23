@@ -24,7 +24,7 @@ public class CorgiOrderServiceImpl implements CorgiOrderService {
 
 
     @Override
-    public String completeChatMessage() {
+    public String completeChatMessage(String context, String message) {
         String token = "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";
         OpenAiService service = new OpenAiService(token, Duration.ofSeconds(30));
 
