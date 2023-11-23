@@ -1,10 +1,9 @@
 package com.corgi.service.impl;
 
 import com.alibaba.dubbo.config.annotation.Service;
-import com.corgi.order.api.CorgiOrderService;
+import com.corgi.order.api.CorgiGPTService;
 import com.theokanning.openai.completion.chat.ChatCompletionRequest;
 import com.theokanning.openai.completion.chat.ChatMessage;
-import com.theokanning.openai.completion.chat.ChatMessageRole;
 import com.theokanning.openai.service.OpenAiService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
@@ -17,10 +16,10 @@ import java.util.List;
 /**
  * @author tairanliu
  */
-@Service(interfaceClass = CorgiOrderService.class)
+@Service(interfaceClass = CorgiGPTService.class)
 @Slf4j
 @Component
-public class CorgiOrderServiceImpl implements CorgiOrderService {
+public class CorgiGPTServiceImpl implements CorgiGPTService {
 
 
     @Override
