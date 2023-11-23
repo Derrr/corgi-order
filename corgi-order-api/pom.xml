@@ -13,11 +13,6 @@
             <artifactId>lombok</artifactId>
             <version>RELEASE</version>
         </dependency>
-        <dependency>
-            <groupId>com.corgi</groupId>
-            <artifactId>corgi-common</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
     </dependencies>
     <repositories>
         <repository>
