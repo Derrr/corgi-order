@@ -1,7 +1,5 @@
 package com.corgi.service.impl;
 
-import com.alibaba.dubbo.config.annotation.Service;
-import com.corgi.order.api.CorgiGPTService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
@@ -13,13 +11,12 @@ import java.util.List;
 /**
  * @author tairanliu
  */
-@Service(interfaceClass = CorgiGPTService.class)
+//@Service(interfaceClass = CorgiGPTService.class)
 @Slf4j
 @Component
-public class CorgiGPTServiceImpl implements CorgiGPTService {
+public class CorgiGPTServiceImpl {
 
 
-    @Override
     public String completeChatMessage(String context, String message) {
 //        String token = "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";
 //        OpenAiService service = new OpenAiService(token, Duration.ofSeconds(30));
