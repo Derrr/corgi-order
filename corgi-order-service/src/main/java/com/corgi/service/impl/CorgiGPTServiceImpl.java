@@ -48,9 +48,9 @@ public class CorgiGPTServiceImpl implements CorgiGPTService {
 
         System.out.println("Streaming chat completion...");
         final List<ChatMessage> messages = new ArrayList<>();
-        final ChatMessage systemMessage = new ChatMessage("Star", "You are a dog and will speak as such.");
+        final ChatMessage systemMessage = new ChatMessage("system", "You are a dog and will speak as such.");
         messages.add(systemMessage);
-        ChatMessage userMessage = new ChatMessage("Admirer", "Hello");
+        ChatMessage userMessage = new ChatMessage("user", "Hello");
         messages.add(userMessage);
         ChatCompletionRequest chatCompletionRequest = ChatCompletionRequest
                 .builder()
