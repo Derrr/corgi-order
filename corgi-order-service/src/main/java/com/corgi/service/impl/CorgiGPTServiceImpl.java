@@ -57,7 +57,7 @@ public class CorgiGPTServiceImpl implements CorgiGPTService {
                 .model("gpt-3.5-turbo")
                 .messages(messages)
                 .n(1)
-                .maxTokens(50)
+                .maxTokens(500)
                 .logitBias(new HashMap<>())
                 .build();
 
