@@ -28,23 +28,23 @@ public class CorgiGPTServiceImpl implements CorgiGPTService {
         String token = "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";//"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";
         OpenAiService service = new OpenAiService(token, Duration.ofSeconds(30));
 
-        System.out.println("\nCreating completion...");
-        CompletionRequest completionRequest = CompletionRequest.builder()
-                .model("ada")
-                .prompt("Somebody once told me the world is gonna roll me")
-                .echo(true)
-                .user("testing")
-                .n(3)
-                .build();
-        service.createCompletion(completionRequest).getChoices().forEach(System.out::println);
-
-        System.out.println("\nCreating Image...");
-        CreateImageRequest request = CreateImageRequest.builder()
-                .prompt("A cow breakdancing with a turtle")
-                .build();
-
-        System.out.println("\nImage is located at:");
-        System.out.println(service.createImage(request).getData().get(0).getUrl());
+//        System.out.println("\nCreating completion...");
+//        CompletionRequest completionRequest = CompletionRequest.builder()
+//                .model("ada")
+//                .prompt("Somebody once told me the world is gonna roll me")
+//                .echo(true)
+//                .user("testing")
+//                .n(3)
+//                .build();
+//        service.createCompletion(completionRequest).getChoices().forEach(System.out::println);
+//
+//        System.out.println("\nCreating Image...");
+//        CreateImageRequest request = CreateImageRequest.builder()
+//                .prompt("A cow breakdancing with a turtle")
+//                .build();
+//
+//        System.out.println("\nImage is located at:");
+//        System.out.println(service.createImage(request).getData().get(0).getUrl());
 
         System.out.println("Streaming chat completion...");
         final List<ChatMessage> messages = new ArrayList<>();
