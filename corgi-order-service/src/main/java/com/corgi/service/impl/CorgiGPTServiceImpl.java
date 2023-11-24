@@ -25,7 +25,7 @@ public class CorgiGPTServiceImpl implements CorgiGPTService {
 
     @Override
     public String completeChatMessage(String context, String message) {
-        String token = "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";
+        String token = "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";//"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";
         OpenAiService service = new OpenAiService(token, Duration.ofSeconds(30));
 
         System.out.println("\nCreating completion...");
